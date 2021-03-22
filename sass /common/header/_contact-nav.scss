@@ -1,0 +1,39 @@
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+}
+
+.contact-nav__link {
+  @extend %link;
+
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+
+  color: var(--text--color);
+  transition: color var(--animation-dur) var(--animation-type);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contact-nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact-nav__item:last-child {
+  margin-left: 30px;
+}

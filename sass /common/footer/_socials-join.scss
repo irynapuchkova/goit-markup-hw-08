@@ -1,0 +1,16 @@
+.join {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.join-title {
+  margin: 0 0 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-transform: uppercase;
+
+  color: var(--bg-primary-color);
+}

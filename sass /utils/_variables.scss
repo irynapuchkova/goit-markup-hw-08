@@ -1,0 +1,20 @@
+:root {
+  --logo-color: #000000;
+  --header-border: #ececec;
+  --title-link-color: #212121;
+  --text--color: #757575;
+  --accent-color: #2196f3;
+  --bg-primary-color: #ffffff;
+  --bg-footer-color: #2f303a;
+  --bg-section-color: #f5f4fa;
+  --filter-unit: #eeeeee;
+  --hero-bgc: #c4c4c4;
+  --consumer-border: #afb1b8;
+  --filter-color: rgba(0, 0, 0, 0.25);
+  --text-contacts-color: rgba(255, 255, 255, 0.6);
+  --footer-join-bgc: rgba(255, 255, 255, 0.1);
+  --team-border-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --animation-dur: 250ms;
+  --animation-type: cubic-bezier(0.4, 0, 0.2, 1);
+}

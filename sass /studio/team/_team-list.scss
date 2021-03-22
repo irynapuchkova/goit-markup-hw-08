@@ -1,0 +1,17 @@
+.team-list {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.team-list__item {
+  border-radius: 4px;
+  box-shadow: var(--team-border-shadow);
+
+  flex-basis: calc((100% - 90px) / 4);
+
+  background-color: var(--bg-primary-color);
+}

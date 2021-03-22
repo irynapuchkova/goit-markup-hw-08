@@ -1,0 +1,45 @@
+.consumer-list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.consumer-list__item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.consumer-list__link {
+  @extend %link;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 90px;
+  padding: 0;
+
+  border: 1px solid var(--consumer-border);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  color: var(--consumer-border);
+
+  transition: border var(--animation-dur) var(--animation-type),
+    color var(--animation-dur) var(--animation-type);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.consumer-list__icon {
+  fill: currentColor;
+}

@@ -1,0 +1,45 @@
+.form-subscribe {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: auto;
+}
+
+.form-subscribe__title {
+  margin: 0 0 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-transform: uppercase;
+
+  color: var(--bg-primary-color);
+}
+
+.form-subscribe__set {
+  display: flex;
+}
+
+.form-subscribe__imput {
+  width: 356px;
+  margin-right: 12px;
+  padding: 14px 0 14px 16px;
+
+  background-color: transparent;
+  color: var(--consumer-border);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  &::placeholder {
+    display: flex;
+    align-items: center;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: var(--text-contacts-color);
+  }
+}

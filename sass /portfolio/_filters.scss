@@ -1,0 +1,29 @@
+.filters {
+  @extend %items;
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filters__item {
+  margin-right: 8px;
+
+  &--last {
+    margin-right: 0;
+  }
+}
+
+.filters-btn {
+  @extend %btn;
+
+  height: 40px;
+  padding: 6px 22px;
+  min-width: min-content;
+
+  font-weight: 500;
+  line-height: 1.6;
+
+  color: var(--title-link-color);
+  background-color: var(--bg-section-color);
+}

@@ -1,0 +1,33 @@
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+.footer-nav__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav__rout {
+  margin: 0 0 9px;
+  color: var(--bg-primary-color);
+}
+
+.footer-nav__connect {
+  @extend %link;
+
+  display: flex;
+  margin-bottom: 9px;
+
+  color: var(--text-contacts-color);
+
+  &--last {
+    margin-bottom: 0;
+  }
+}
