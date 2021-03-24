@@ -1,7 +1,17 @@
 .activity {
-  padding-bottom: 94px;
+  @media screen and(max-width: 1199px) {
+    display: none;
+  }
+}
+
+.activity {
+  @media screen and(min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 
 .activity__title {
-  margin-bottom: 50px;
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }

@@ -38,6 +38,7 @@
 .subscribe-btn {
   @extend %btn;
 
+  display: inline-block;
   position: relative;
   padding: 10px 60px 10px 28px;
 }

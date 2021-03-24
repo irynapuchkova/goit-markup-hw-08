@@ -1,8 +1,15 @@
 .site-nav {
   @extend %items;
+  display: none;
 
-  display: flex;
-  align-items: center;
+  @media screen and(min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-left: 94px;
+  }
 }
 
 .site-nav__item {

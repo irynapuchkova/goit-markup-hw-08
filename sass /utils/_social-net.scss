@@ -20,14 +20,15 @@
     color: var(--consumer-border);
   }
 
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-    color: var(--bg-primary-color);
-  }
-
   &--footer {
     background-color: var(--footer-join-bgc);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--accent-color);
+    color: var(--bg-primary-color);
   }
 }
 

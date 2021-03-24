@@ -1,11 +1,16 @@
-.link {
-  @extend %link;
-}
-
 .portfolio-thumb {
   position: relative;
 
   overflow: hidden;
+}
+
+.portfolio-thumb__img {
+  @extend %img;
+
+  @media screen and(min-width: 480px) {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .portfolio-thumb__overlay {
@@ -37,6 +42,8 @@
 }
 
 .portfolio-thumb__dsc {
+  flex-grow: 1;
+
   padding: 20px 24px;
   border-right: 1px solid var(--filter-unit);
   border-bottom: 1px solid var(--filter-unit);

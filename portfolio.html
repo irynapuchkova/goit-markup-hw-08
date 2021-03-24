@@ -17,7 +17,7 @@
     <header class="header">
       <div class="container">
         <nav class="header__nav">
-          <a href="./index.html" class="logo logo--right link"
+          <a href="./index.html" class="logo link"
             ><span class="logo__subtext">Web</span>Studio</a
           >
 
@@ -107,11 +107,12 @@
 
           <ul class="portfolio-list">
             <li class="portfolio-list__item">
-              <a class="link" href="">
+              <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
                   <img
                     src="images/portfolio/web_tehnokrat_new.jpg"
                     alt="Web-site"
+                    class="img.portfolio-thumb__img"
                   />
                   <p class="portfolio-thumb__overlay">
                     Технокряк это современная площадка распространения
@@ -128,12 +129,12 @@
             </li>
 
             <li class="portfolio-list__item">
-              <a class="link" href="">
+              <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
                   <img
                     src="images/portfolio/design_poster.jpg"
                     alt="Poster design"
-                    width="370"
+                    class="img.portfolio-thumb__img"
                   />
                   <p class="portfolio-thumb__overlay">
                     Технокряк это современная площадка распространения
@@ -152,12 +153,12 @@
             </li>
 
             <li class="portfolio-list__item">
-              <a class="link" href="">
+              <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
                   <img
                     src="images/portfolio/app_restaurant.jpg"
                     alt="Restaurant App"
-                    width="370"
+                    class="img.portfolio-thumb__img"
                   />
                   <p class="portfolio-thumb__overlay">
                     Технокряк это современная площадка распространения
@@ -174,12 +175,12 @@
             </li>
 
             <li class="portfolio-list__item">
-              <a class="link" href="">
+              <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
                   <img
                     src="images/portfolio/marketing_prj_prime.jpg"
                     alt="Project marketing"
-                    width="370"
+                    class="img.portfolio-thumb__img"
                   />
                   <p class="portfolio-thumb__overlay">
                     Технокряк это современная площадка распространения
@@ -195,12 +196,12 @@
             </li>
 
             <li class="portfolio-list__item">
-              <a class="link" href="">
+              <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
                   <img
                     src="images/portfolio/app_prj_boxes.jpg"
                     alt="Boxes App"
-                    width="370"
+                    class="img.portfolio-thumb__img"
                   />
                   <p class="portfolio-thumb__overlay">
                     Технокряк это современная площадка распространения
@@ -216,12 +217,12 @@
             </li>
 
             <li class="portfolio-list__item">
-              <a class="link" href="">
+              <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
                   <img
                     src="images/portfolio/web_site_inspiration.jpg"
                     alt="Web-site"
-                    width="370"
+                    class="img.portfolio-thumb__img"
                   />
                   <p class="portfolio-thumb__overlay">
                     Технокряк это современная площадка распространения
@@ -239,12 +240,12 @@
             </li>
 
             <li class="portfolio-list__item">
-              <a class="link" href="">
+              <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
                   <img
                     src="images/portfolio/design_magazine.jpg"
                     alt="Magazine design"
-                    width="370"
+                    class="img.portfolio-thumb__img"
                   />
                   <p class="portfolio-thumb__overlay">
                     Технокряк это современная площадка распространения
@@ -262,12 +263,12 @@
             </li>
 
             <li class="portfolio-list__item">
-              <a class="link" href="">
+              <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
                   <img
                     src="images/portfolio/marketing_prj_lab.jpg"
                     alt="Lab marketing"
-                    width="370"
+                    class="img.portfolio-thumb__img"
                   />
                   <p class="portfolio-thumb__overlay">
                     Технокряк это современная площадка распространения
@@ -283,12 +284,12 @@
             </li>
 
             <li class="portfolio-list__item">
-              <a class="link" href="">
+              <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
                   <img
                     src="images/portfolio/app_growing_business.jpg"
                     alt="Growing Business App"
-                    width="370"
+                    class="img.portfolio-thumb__img"
                   />
                   <p class="portfolio-thumb__overlay">
                     Технокряк это современная площадка распространения
@@ -308,85 +309,97 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__container container">
-        <div class="contacts">
-          <a href="./index.html" class="logo logo__footer link"
-            ><span class="logo__subtext">Web</span>Studio</a
-          >
+      <div class="footer__container">
+        <div class="footer-set">
+          <div class="contacts">
+            <a href="./index.html" class="logo logo__footer link"
+              ><span class="logo__subtext">Web</span>Studio</a
+            >
 
-          <address class="footer-nav">
-            <p class="footer-nav__rout">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="footer-nav__list">
-              <li class="footer-nav__item">
+            <address class="footer-nav">
+              <p class="footer-nav__rout">г. Киев, пр-т Леси Украинки, 26</p>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a
+                    href="mailto:info@example.com"
+                    class="footer-nav__connect link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-nav__item">
+                  <a href="tel:+380991111111" class="footer-nav__connect link"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="join">
+            <h3 class="join-title">присоединяйтесь</h3>
+
+            <ul class="social-net">
+              <li class="social-net__item">
                 <a
-                  href="mailto:info@example.com"
-                  class="footer-nav__connect link"
-                  >info@example.com</a
+                  class="social-net__link social-net__link--footer link"
+                  href=""
                 >
+                  <svg
+                    class="social-net__icon social-net__icon--footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-nav__item">
+
+              <li class="social-net__item">
                 <a
-                  href="tel:+380991111111"
-                  class="footer-nav__connect footer-nav__connect--last link"
-                  >+38 099 111 11 11</a
+                  class="social-net__link social-net__link--footer link"
+                  href=""
                 >
+                  <svg
+                    class="social-net__icon social-net__icon--footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-net__item">
+                <a
+                  class="social-net__link social-net__link--footer link"
+                  href=""
+                >
+                  <svg
+                    class="social-net__icon social-net__icon--footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-net__item">
+                <a
+                  class="social-net__link social-net__link--footer link"
+                  href=""
+                >
+                  <svg
+                    class="social-net__icon social-net__icon--footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="join">
-          <h3 class="join-title">присоединяйтесь</h3>
-
-          <ul class="social-net">
-            <li class="social-net__item">
-              <a class="social-net__link social-net__link--footer link" href="">
-                <svg
-                  class="social-net__icon social-net__icon--footer"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social-net__item">
-              <a class="social-net__link social-net__link--footer link" href="">
-                <svg
-                  class="social-net__icon social-net__icon--footer"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social-net__item">
-              <a class="social-net__link social-net__link--footer link" href="">
-                <svg
-                  class="social-net__icon social-net__icon--footer"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social-net__item">
-              <a class="social-net__link social-net__link--footer link" href="">
-                <svg
-                  class="social-net__icon social-net__icon--footer"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <!-- form-subscribe footer -->

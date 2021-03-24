@@ -1,15 +1,29 @@
 .consumer-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 0;
+
+  margin-bottom: -30px;
+  margin-left: -30px;
+
+  margin-top: 0;
   padding: 0;
 }
 
 .consumer-list__item {
-  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
 
-  &:last-child {
-    margin-right: 0;
+  @media screen and(min-width: 480px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  @media screen and(max-width: 1199px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+
+  @media screen and(min-width: 1200px) {
+    flex-basis: calc((100% - 180px) / 6);
   }
 }
 
@@ -19,10 +33,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  width: 170px;
-  height: 90px;
-  padding: 0;
 
   border: 1px solid var(--consumer-border);
   box-sizing: border-box;
@@ -34,9 +44,22 @@
     color var(--animation-dur) var(--animation-type);
 
   &:hover,
-  &:focus {
+  &:focus,
+  &active {
     color: var(--accent-color);
     border-color: var(--accent-color);
+  }
+
+  @media screen and(min-width: 480px) {
+    width: 210px;
+    height: 90px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    width: 170px;
+    height: 90px;
+    padding: 0;
+    margin: 0;
   }
 }
 
