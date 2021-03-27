@@ -3,11 +3,6 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  @media screen and(min-width: 480px) {
-    display: flex;
-    flex-direction: ;
-  }
-
   @media screen and(min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -39,7 +34,7 @@
     outline: none;
   }
 
-  @media screen and(min-width: 480px) {
+  @media screen and(max-width: 767px) {
     &:last-child {
       margin-bottom: 0;
     }
@@ -58,7 +53,6 @@
 
 .portfolio-list__link {
   @extend %link;
-
   display: flex;
   flex-direction: column;
 }

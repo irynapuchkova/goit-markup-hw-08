@@ -10,8 +10,15 @@
 
   @media screen and(min-width: 1200px) {
     display: flex;
+    align-items: center;
 
     margin-left: auto;
+  }
+}
+
+.contact-nav__item {
+  &:first-child {
+    margin-bottom: 0;
   }
 }
 
@@ -30,10 +37,6 @@
   &:focus {
     color: var(--accent-color);
   }
-
-  // &:last-child {
-  //   margin-bottom: 0;
-  // }
 
   @media screen and(min-width: 768px) {
     display: flex;

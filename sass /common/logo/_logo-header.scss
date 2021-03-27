@@ -1,20 +1,17 @@
 .logo {
   @extend %link;
+  @extend %logo;
 
-  display: flex;
+  display: inline-block;
+  padding-bottom: 12px;
+  padding-top: 12px;
 
-  align-items: center;
+  font-size: 24px;
+  line-height: 1.077;
 
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  color: var(--logo-color);
-  font-family: 'Raleway', sans-serif;
-
-  @media screen and(min-width: 480px) {
-    padding-bottom: 25px;
-    padding-top: 25px;
+  @media screen and(min-width: 768px) {
+    padding-bottom: 26px;
+    padding-top: 26px;
   }
 }
 

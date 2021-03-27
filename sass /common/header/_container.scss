@@ -1,7 +1,5 @@
 .container {
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %container;
 
   @media screen and(min-width: 480px) {
     width: 480px;
