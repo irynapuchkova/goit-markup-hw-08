@@ -1,0 +1,22 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+
+  height: 100vh;
+  width: 100vw;
+
+  background-color: white;
+  // max-width: 480px;
+  padding: 48px 40px;
+
+  z-index: 555;
+
+  transform: translateX(100%);
+  transition: 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}

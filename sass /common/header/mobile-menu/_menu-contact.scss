@@ -1,0 +1,30 @@
+.menu-contact {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 64px;
+}
+
+.menu-contact__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.menu-contact__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.176;
+  text-decoration: none;
+
+  color: var(--accent-color);
+}
+
+.menu-contact__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.167;
+
+  color: var(--text--color);
+
+  text-decoration: none;
+}

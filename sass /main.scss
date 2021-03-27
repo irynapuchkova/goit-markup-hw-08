@@ -36,4 +36,9 @@
 @import './studio/backdrop/modal-order';
 @import './studio/backdrop/form-order';
 @import './studio/backdrop/check-box';
-@import './studio/mobile-menu/_container.cscc';
+@import './common/header/mobile-menu/container';
+@import './common/header/mobile-menu/button';
+@import './common/header/mobile-menu/menu-site__nav';
+@import './common/header/mobile-menu/mobile-nav';
+@import './common/header/mobile-menu/menu-contact';
+@import './common/header/mobile-menu/menu-socials';

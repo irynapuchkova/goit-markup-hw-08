@@ -1,0 +1,25 @@
+.menu-site__nav {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 200px;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+}
+
+.menu-site__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.menu-site__link {
+  text-decoration: none;
+
+  color: var(--title-link-color);
+
+  &--current {
+    color: var(--accent-color);
+  }
+}

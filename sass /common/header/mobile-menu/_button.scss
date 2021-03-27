@@ -1,0 +1,52 @@
+.menu-toggle {
+  position: absolute;
+
+  top: 14px;
+  right: 10px;
+  padding: 0;
+  margin: 0;
+
+  min-width: 40px;
+  min-height: 40px;
+
+  border-color: transparent;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+
+    fill: var(--accent-color);
+  }
+}
+
+.mobile-btn {
+  position: absolute;
+  top: 1.5vh;
+  right: 1vw;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 40px;
+  min-height: 40px;
+
+  background-color: transparent;
+  border-color: transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+
+    fill: var(--accent-color);
+  }
+}
