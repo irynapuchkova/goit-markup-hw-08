@@ -1,17 +1,19 @@
 .form-subscribe {
-  text-align: center;
+  @media (max-width: 1199px) {
+    display: block;
+    text-align: center;
+  }
 
   @media screen and(min-width: 1200px) {
     display: flex;
-    flex-direction: column;
-
     margin-left: auto;
   }
 }
 
 .form-subscribe__title {
-  display: inline-block;
-  margin: 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  // margin: 0 0 20px;
 
   font-weight: 700;
   font-size: 14px;
@@ -19,17 +21,16 @@
   text-transform: uppercase;
 
   color: var(--bg-primary-color);
-}
 
-.form-subscribe__set {
-  @media screen and(min-width: 1200px) {
-    display: flex;
+  @media (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 
 .form-subscribe__imput {
   padding: 15px 0 15px 16px;
   margin-bottom: 20px;
+  margin-top: 20px;
   width: 100%;
 
   background-color: transparent;
@@ -54,11 +55,11 @@
     width: 450px;
 
     margin-left: auto;
-    margin-right: 12px;
-    margin-bottom: 0;
+    margin-right: auto;
   }
 
   @media screen and(min-width: 1200px) {
     width: 356px;
+    margin-bottom: 0;
   }
 }

@@ -6,27 +6,20 @@
 }
 
 .menu-socials__item:not(:last-child) {
-  position: relative;
+  margin-right: 10px;
 
-  margin-right: 20px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .menu-socials__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.222;
+  letter-spacing: 0.02em;
+
   text-decoration: none;
 
   color: var(--accent-color);
 
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 10px;
-
-    width: 22px;
-
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
-  }
+  padding-right: 10px;
 }

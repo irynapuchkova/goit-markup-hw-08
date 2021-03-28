@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
 
@@ -114,7 +114,11 @@
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
                   <img
-                    src="images/portfolio/web_tehnokrat_new.jpg"
+                    src="./images/portfolio/web_tehnokrat/web_tehnokrat_new.jpg"
+                    srcset="
+                      ./images/portfolio/web_tehnokrat/web_tehnokrat_new.jpg    1x,
+                      ./images/portfolio/web_tehnokrat/web_tehnokrat_new@2x.jpg 2x
+                    "
                     alt="Web-site"
                     class="portfolio-thumb__img"
                   />
@@ -136,7 +140,11 @@
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
                   <img
-                    src="images/portfolio/design_poster.jpg"
+                    src="./images/portfolio/design_poster/design_poster.jpg"
+                    srcset="
+                      ./images/portfolio/design_poster/design_poster.jpg    1x,
+                      ./images/portfolio/design_poster/design_poster@2x.jpg 2x
+                    "
                     alt="Poster design"
                     class="portfolio-thumb__img"
                   />
@@ -160,7 +168,11 @@
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
                   <img
-                    src="images/portfolio/app_restaurant.jpg"
+                    src="./images/portfolio/app_restaurant/app_restaurant.jpg"
+                    srcset="
+                      ./images/portfolio/app_restaurant/app_restaurant.jpg    1x,
+                      ./images/portfolio/app_restaurant/app_restaurant@2x.jpg 2x
+                    "
                     alt="Restaurant App"
                     class="portfolio-thumb__img"
                   />
@@ -182,7 +194,11 @@
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
                   <img
-                    src="images/portfolio/marketing_prj_prime.jpg"
+                    src="./images/portfolio/marketing_prj_prime/marketing_prj_prime.jpg"
+                    srcset="
+                      ./images/portfolio/marketing_prj_prime/marketing_prj_prime.jpg    1x,
+                      ./images/portfolio/marketing_prj_prime/marketing_prj_prime@2x.jpg 2x
+                    "
                     alt="Project marketing"
                     class="portfolio-thumb__img"
                   />
@@ -203,7 +219,11 @@
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
                   <img
-                    src="images/portfolio/app_prj_boxes.jpg"
+                    src="./images/portfolio/app_prj_boxes/app_prj_boxes.jpg"
+                    srcset="
+                      ./images/portfolio/app_prj_boxes/app_prj_boxes.jpg    1x,
+                      ./images/portfolio/app_prj_boxes/app_prj_boxes@2x.jpg 2x
+                    "
                     alt="Boxes App"
                     class="portfolio-thumb__img"
                   />
@@ -224,7 +244,11 @@
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
                   <img
-                    src="images/portfolio/web_site_inspiration.jpg"
+                    src="./images/portfolio/web_site_inspiration/web_site_inspiration.jpg"
+                    srcset="
+                      ./images/portfolio/web_site_inspiration/web_site_inspiration.jpg    1x,
+                      ./images/portfolio/web_site_inspiration/web_site_inspiration@2x.jpg 2x
+                    "
                     alt="Web-site"
                     class="portfolio-thumb__img"
                   />
@@ -247,7 +271,11 @@
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
                   <img
-                    src="images/portfolio/design_magazine.jpg"
+                    src="./images/portfolio/design_magazine/design_magazine.jpg"
+                    srcset="
+                      ./images/portfolio/design_magazine/design_magazine.jpg    1x,
+                      ./images/portfolio/design_magazine/design_magazine@2x.jpg 2x
+                    "
                     alt="Magazine design"
                     class="portfolio-thumb__img"
                   />
@@ -270,7 +298,11 @@
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
                   <img
-                    src="images/portfolio/marketing_prj_lab.jpg"
+                    src="./images/portfolio/marketing_prj_lab/marketing_prj_lab.jpg"
+                    srcset="
+                      ./images/portfolio/marketing_prj_lab/marketing_prj_lab.jpg    1x,
+                      ./images/portfolio/marketing_prj_lab/marketing_prj_lab@2x.jpg 2x
+                    "
                     alt="Lab marketing"
                     class="portfolio-thumb__img"
                   />
@@ -291,7 +323,11 @@
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
                   <img
-                    src="images/portfolio/app_growing_business.jpg"
+                    src="./images/portfolio/app_growing_business/app_growing_business.jpg"
+                    srcset="
+                      ./images/portfolio/app_growing_business/app_growing_business.jpg    1x,
+                      ./images/portfolio/app_growing_business/app_growing_business@2x.jpg 2x
+                    "
                     alt="Growing Business App"
                     class="portfolio-thumb__img"
                   />
@@ -409,21 +445,26 @@
         <!-- form-subscribe footer -->
 
         <form class="form-subscribe">
-          <label class="form-subscribe__title">Подпишитесь на рассылку</label>
-          <div class="form-subscribe__set">
+          <label class="form-subscribe__title"
+            >Подпишитесь на рассылку
             <input
               class="form-subscribe__imput"
               type="email"
               name="email"
               placeholder="E-mail"
             />
-            <button class="btn subscribe-btn" type="submit">
-              Подписаться
-              <svg class="subscribe-btn__icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </div>
+          </label>
+          <button class="btn subscribe-btn" type="submit">
+            Подписаться
+            <svg
+              class="subscribe-btn__icon"
+              width="24"
+              height="24"
+              loading="lazy"
+            >
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
         </form>
       </div>
     </footer>

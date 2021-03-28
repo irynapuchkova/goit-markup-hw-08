@@ -6,14 +6,17 @@
 
   margin-bottom: 30px;
 
-  font-family: 'Roboto', sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.167;
+
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .form-checkbox__input {
-  margin-left: 12px;
+  margin-right: -8px;
 
   appearance: none;
 }

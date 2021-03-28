@@ -15,8 +15,12 @@
 }
 
 .join-title {
+  @media (max-width: 1199px) {
+    text-align: center;
+  }
+
   display: block;
-  text-align: center;
+
   margin: 0 0 20px;
 
   font-weight: 700;

@@ -8,13 +8,13 @@
   width: 100vw;
 
   background-color: white;
-  // max-width: 480px;
   padding: 48px 40px;
 
   z-index: 555;
 
   transform: translateX(100%);
   transition: 250ms ease-in-out;
+  overflow-y: scroll;
 }
 
 .menu-container.is-open {
